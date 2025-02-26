@@ -91,25 +91,128 @@
         </header>
 
         <!-- Add Money section -->
-        <section>
-            <h2>Add Money</h2>
+        <section class="mt-6">
+            <h2 class="font-semibold text-lg ml-4">Add Money</h2>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div class="rounded-3xl bg-base-100 w-full shrink-0">
                     <div class="card-body">
                       <fieldset class="fieldset">
-                        <label class="fieldset-label">Email</label>
-                        <input type="email" class="input" placeholder="Email" />
-                        <label class="fieldset-label">Password</label>
-                        <input type="password" class="input" placeholder="Password" />
-                        <div><a class="link link-hover">Forgot password?</a></div>
-                        <button class="btn btn-neutral mt-4">Login</button>
+                        <legend class="fieldset-label text-base font-semibold">Select A Bank</legend>
+                            <select class="select w-full rounded-3xl border-none bg-gray-100 pl-5 text-base mb-3 mt-2">
+                              <option disabled selected>Select Bank</option>
+                              <option>Sonali Bank</option>
+                              <option>Brack Bank</option>
+                              <option>City Bank</option>
+                            </select>
+                        <label class="fieldset-label text-base font-semibold">Bank Account Number</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter 11 digit account number" />
+
+                        <label class="fieldset-label text-base font-semibold">Amount to Add</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Add Amount to withdraw" />
+                        <label class="fieldset-label text-base font-semibold">Pin Number</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter 4 digit pin number" />
+                        <button class="rounded-3xl p-5 text-xl  btn bg-[#0874F2] text-white mt-4">Add Money</button>
                       </fieldset>
                     </div>
                   </div>
                 </div>
               </div>
         </section>
+
+        <!-- Cashout section -->
+        <section class="mt-6">
+            <h2 class="font-semibold text-lg ml-4">Cash Out</h2>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <div class="rounded-3xl bg-base-100 w-full shrink-0">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="fieldset-label text-base font-semibold">Agent Number</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter 11 digit number" />
+
+                        <label class="fieldset-label text-base font-semibold">Amount</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter Amount to withdraw" />
+                        <label class="fieldset-label text-base font-semibold">Pin Number</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter 4 digit pin number" />
+                        <button class="rounded-3xl p-5 text-lg  btn bg-[#0874F2] text-white mt-4">Withdraw Money</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <!-- Transfer Money section -->
+        <section class="mt-6">
+            <h2 class="font-semibold text-lg ml-4">Transfer Money</h2>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <div class="rounded-3xl bg-base-100 w-full shrink-0">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="fieldset-label text-base font-semibold">User Account Number</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter 11 digit account number" />
+
+                        <label class="fieldset-label text-base font-semibold">Amount</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter Amount to Transfer" />
+                        <label class="fieldset-label text-base font-semibold">Pin Number</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter 4 digit pin number" />
+                        <button class="rounded-3xl p-5 text-lg  btn bg-[#0874F2] text-white mt-4">Send Now</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Get Bonus section -->
+        <section class="mt-6">
+            <h2 class="font-semibold text-lg ml-4">Get Bonus</h2>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <div class="rounded-3xl bg-base-100 w-full shrink-0">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="fieldset-label text-base font-semibold">Enter Bonus Coupon</label>
+                        <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter Your Coupon" />
+                        <button class="rounded-3xl p-5 text-lg  btn bg-[#0874F2] text-white mt-4">Get Bonus</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!-- Pay Bill Section -->
+        <section class="mt-6">
+          <h2 class="font-semibold text-lg ml-4">Pay Bill</h2>
+          <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="rounded-3xl bg-base-100 w-full shrink-0">
+                  <div class="card-body">
+                    <fieldset class="fieldset">
+                      <legend class="fieldset-label text-base font-semibold">Select To Pay</Select></legend>
+                          <select class="select w-full rounded-3xl border-none bg-gray-100 pl-5 text-base mb-3 mt-2">
+                            <option disabled selected>Select Bank</option>
+                            <option>Sonali Bank</option>
+                            <option>Brack Bank</option>
+                            <option>City Bank</option>
+                          </select>
+                      <label class="fieldset-label text-base font-semibold">Biller Account Number</label>
+                      <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter account number" />
+
+                      <label class="fieldset-label text-base font-semibold">Amount to Pay</label>
+                      <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Add Amount to Pay" />
+                      <label class="fieldset-label text-base font-semibold">Pin Number</label>
+                      <input type="number" class="input w-full rounded-3xl border-none bg-gray-100 p-5 text-base mb-3 mt-2" placeholder="Enter 4 digit pin number" />
+                      <button class="rounded-3xl p-5 text-lg  btn bg-[#0874F2] text-white mt-4">Pay Now</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
     </section>
 </body>
 </html>
